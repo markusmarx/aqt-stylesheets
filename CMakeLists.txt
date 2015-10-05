@@ -59,6 +59,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL Clang
     -Wno-padded
     -Wno-undefined-reinterpret-cast
     -Wno-documentation-deprecated-sync
+    -Wno-error=disabled-macro-expansion
   )
 elseif(MSVC)
   set(warning_options /WX /W4 /wd4503 /wd4512)
