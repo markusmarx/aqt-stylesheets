@@ -61,6 +61,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL Clang
     -Wno-documentation-deprecated-sync
     -Wno-error=disabled-macro-expansion
     -Wno-error=reserved-id-macro
+    -Wno-error=unused-local-typedef
   )
 elseif(MSVC)
   set(warning_options /WX /W4 /wd4503 /wd4512)
